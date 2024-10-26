@@ -1,0 +1,236 @@
+body{
+    background-color: rgb(15, 15, 15);
+    margin: 0;
+    padding: 0;
+    font-family: 'Verdana';
+}
+header{
+    border-bottom: 1px solid gray;
+    position: fixed;
+    right: 32em;
+    z-index: 1;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding:10px;
+    text-align: center;
+}
+li{
+    display: inline;
+    padding:10px;
+    justify-content: center;
+    align-items: center;
+}
+.a1{
+    color:green;
+    padding: 10px 25px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-family: Cambria;
+    font-weight: bold;
+}
+.a1:hover{
+    background-color: aliceblue;
+    border: 2px double darkblue;
+}
+.aside1{
+    /* border: 1px solid white; */
+    position: absolute;
+    top:16em;
+    left:22em;
+}
+.h11{
+    color: white;
+    font-family: 'Verdana';
+    font-size: xx-large;
+    justify-content: center;
+}
+.h33{
+    color: white;
+    font-family: cursive;
+    font-size: large;
+}
+.main1{
+    height: 50em;
+    position: relative;
+    /* border: 1px solid green; */
+}
+.div1{
+    width: max-content;
+    position: absolute;
+    top: 6em;
+    right: 16em;
+}
+.img1{
+    width:60rex;
+    display: flex;
+    border: 1px solid black;
+    border-radius: .6em;
+    filter: drop-shadow(1px 1px 1em white);
+}
+.img1:hover{
+    top: 3em;
+    position: absolute;
+    right: 2em;
+    width:50rex;
+}
+
+/* About section */
+
+.main2{
+    height: fit-content ;
+    position: relative;
+    
+    /* border: 1px solid green; */
+    background-color: white;
+    font-family: Verdana;
+}
+.div2{
+    margin:0 7em;
+    border: 1px solid rgb(255, 255, 255);
+}
+.div21{
+    margin: 0 7em;
+}
+summary{
+    line-height: 24px;
+}
+.div22{
+    width: fit-content;
+    display: flex;
+    margin: 40px 120px;
+    /* border: 5px solid rgb(145, 114, 65); */
+}
+.img2{
+    width: 24em;
+    height: 24em;
+    border: 5px solid rgb(145, 114, 65);
+    border-radius: 10px;
+}
+.div23{
+    position: relative;
+    top: -2em;
+    left: 5em;
+}
+.h21{
+    font-size: xx-large;
+}
+.span1{
+    font-size: 1.8em;
+    color: rgb(255, 0, 149);
+}
+.a2{
+    color:rgb(109, 176, 9);
+    
+}
+.a22{
+    text-decoration: none;
+}
+.pp{
+    font-size: 16px;
+    line-height: 3.4em;
+    
+}
+
+/* skills section */
+
+.div03{
+    height: 41em;
+    background-color: rgba(35, 255, 237, 0.196);
+}
+.div3{
+    margin:0 7em;
+    position: relative;
+    top:2em;
+}
+.main21{
+    width: 85%;
+    height: 30em;
+    padding: 10px;
+    /* border: 1px solid green; */
+    margin: auto;
+    margin-top: 40px;
+}
+.divmain0{
+    height: 26em;
+    padding:1em 3em;
+    display: flex;
+    /* position: relative; */
+    /* top: 5em; */
+    /* border: 1px solid green; */
+}
+/* .divmain2{
+    display: ;
+}
+.divmain2{
+
+} */
+
+
+/* Resume */
+
+.main3{
+    /* border: 1px solid rgb(253, 2, 2); */
+    background-color: white;
+    position: relative;
+    
+}
+.div30{
+    padding: 1em 0 0 3.4em;
+}
+.aside31{
+    margin: 10px 10px 10px 7em;
+    width:30%;
+    /* border: 1px solid black; */
+    border-radius: 20px;
+
+    position: absolute;
+}
+.aside32{
+    
+    margin: 10px;
+    padding: 10px 6em;
+    margin-left: 39em;
+    line-height: 26px;
+    position: relative;
+    border-left: 1px groove cadetblue;
+    
+}
+.resumeP{
+    padding: 10px;
+    font-size: large;
+    line-height: 3em;
+    border-bottom-style: ridge;
+    border-radius: 20px;
+    background-color: rgba(231, 231, 231, 0.629);
+}
+.aside33{
+    margin: 10px 10px 10px 7em;
+    
+    /* border: 1px solid black; */
+    border-radius: 20px;
+}
+.projectp{
+    margin-right: 10px;
+    padding: 20px;
+    font-size: large;
+    line-height: 3em;
+    border-bottom-style: ridge;
+    border-radius: 20px;
+    background-color: rgba(231, 231, 231, 0.629);
+}
+.projectp:hover ,.resumeP:hover{
+    background-color: rgba(255, 255, 255, 0.629);
+    border-style: ridge;
+}
+
+/* Footer page section */
+
+footer{
+    background-color: rgb(237, 237, 237);
+    height: 6em;
+    position: relative;
+    align-content: center;
+    
+}
