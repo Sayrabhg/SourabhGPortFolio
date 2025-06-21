@@ -118,9 +118,11 @@ main .container {
     background-color: white;
     background: linear-gradient(222deg, #ccbebe 0% 19%, #584fb9 85%);
 }
+
 .Tech-Skills {
     background: linear-gradient(-222deg, #ccbebe 0% 19%, #584fb9 85%);
 }
+
 .div2 {
     border: 1px solid rgba(255, 255, 255, 0);
 }
@@ -147,41 +149,13 @@ main .container {
     }
 }
 
-/* skills section */
-
-.div03 {
-    
-    
-}
-
-.div3 {
-    
-    
-}
-
-.main21 {
-    
-    
-}
-
-.divmain0 {
-    justify-self: flex-start;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2em;
-}
-
-.divmain0 div {
-    /* background-color: white; */
-}
-
 /* Resume */
 
 .main3 {
-    /* border: 1px solid rgb(253, 2, 2); */
     background-color: white;
     position: relative;
 }
+
 /* Footer page section */
 
 footer {
@@ -204,30 +178,29 @@ footer ul li {
 footer ul li a {
     text-decoration: none;
     color: rgb(49, 49, 49);
-
 }
 
 li a span {
     color: rgb(0, 157, 171);
-
 }
 
-.educationanimation {
-    transition: all .5s ease-in;
+.educationanimation,
+.alleductionanimation {
+    transition: all .7s ease-in;
 }
 
 .educationanimation:hover {
+    filter: none;
     scale: 1.1;
-    background-color: #594aff22;
 }
 
 #Resume .showresume.visible {
     animation: resume 1s .8s ease-in;
     opacity: 1;
 }
+
 #Resume #showgridresume.visible {
-    animation: showgridresume 1.5s  .8s ease-in;
-    /* opacity: 1; */
+    animation: showgridresume 1.5s .8s ease-in;
 }
 
 @keyframes resume {
@@ -276,4 +249,12 @@ li a span {
 .percentage {
     position: relative;
     font-size: 1em;
-    color: black; }
+    color: black;
+}
+
+@media screen and (max-width:600px) {
+    .circular-progress {
+        width: 80px;
+        height: 80px;
+    }
+}
