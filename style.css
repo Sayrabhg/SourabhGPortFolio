@@ -1,0 +1,279 @@
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    src: local('Poppins'), url('font/poppins-regular.woff2') format('woff');
+}
+
+body {
+    background-color: rgb(15, 15, 15);
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+}
+
+.h11 {
+    animation-name: colorchange;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-delay: .2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes colorchange {
+    0% {
+        color: #00ff93;
+    }
+
+    10% {
+        color: #f6ff00;
+    }
+
+    20% {
+        color: #ff5e00;
+    }
+
+    30% {
+        color: #00ff51;
+    }
+
+    40% {
+        color: #00b3ff;
+    }
+
+    50% {
+        color: #00ff93;
+    }
+
+    60% {
+        color: #00c3ff;
+    }
+
+    70% {
+        color: #0400ff;
+    }
+
+    80% {
+        color: #8c00ff;
+    }
+
+    90% {
+        color: #ff00ee;
+    }
+
+    100% {
+        color: #00ff93;
+    }
+}
+
+.h33.highlight-last-word span {
+    color: #00d9ff;
+}
+
+@media screen and (min-width:1569px) {
+    main .container {
+        max-width: 1500px;
+    }
+}
+
+main .container {
+    margin: 0 7em;
+    justify-self: center;
+}
+
+.img1 {
+    width: 60rex;
+    display: flex;
+    border: 1px solid black;
+    border-radius: .6em;
+    filter: drop-shadow(1px 1px 1em white);
+    transition: 2s;
+    animation-name: front;
+    animation-timing-function: ease-in-out;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes front {
+    0% {
+        transform: scale(1, 1);
+    }
+
+    50% {
+        transform: scale(.8, .8);
+    }
+
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+.img1:hover {
+    transform: scale(.8, .8);
+    animation: none;
+}
+
+/* About section */
+
+.main2 {
+    background-color: white;
+    background: linear-gradient(222deg, #ccbebe 0% 19%, #584fb9 85%);
+}
+.Tech-Skills {
+    background: linear-gradient(-222deg, #ccbebe 0% 19%, #584fb9 85%);
+}
+.div2 {
+    border: 1px solid rgba(255, 255, 255, 0);
+}
+
+#About .container.visible {
+    opacity: 1;
+    animation: reload-img2 .8s ease-in;
+}
+
+#About .container {
+    opacity: 0;
+    cursor: pointer;
+}
+
+@keyframes reload-img2 {
+    0% {
+        transform: translateY(-50em);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* skills section */
+
+.div03 {
+    
+    
+}
+
+.div3 {
+    
+    
+}
+
+.main21 {
+    
+    
+}
+
+.divmain0 {
+    justify-self: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+.divmain0 div {
+    /* background-color: white; */
+}
+
+/* Resume */
+
+.main3 {
+    /* border: 1px solid rgb(253, 2, 2); */
+    background-color: white;
+    position: relative;
+}
+/* Footer page section */
+
+footer {
+    background-color: rgb(237, 237, 237);
+    height: 6em;
+    position: relative;
+    align-content: center;
+    align-self: center;
+}
+
+footer ul {
+    display: block;
+}
+
+footer ul li {
+    display: block;
+    text-align: center;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: rgb(49, 49, 49);
+
+}
+
+li a span {
+    color: rgb(0, 157, 171);
+
+}
+
+.educationanimation {
+    transition: all .5s ease-in;
+}
+
+.educationanimation:hover {
+    scale: 1.1;
+    background-color: #594aff22;
+}
+
+#Resume .showresume.visible {
+    animation: resume 1s .8s ease-in;
+    opacity: 1;
+}
+#Resume #showgridresume.visible {
+    animation: showgridresume 1.5s  .8s ease-in;
+    /* opacity: 1; */
+}
+
+@keyframes resume {
+    0% {
+        opacity: 0;
+        transform: translateX(-106em);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes showgridresume {
+    0% {
+        opacity: 0;
+        transform: translateX(106em);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* circular progress bar css */
+
+.circular-progress {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-circle {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(83, 36, 36);
+}
+
+.percentage {
+    position: relative;
+    font-size: 1em;
+    color: black; }
