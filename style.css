@@ -192,6 +192,7 @@ li a span {
 .educationanimation:hover {
     filter: none;
     scale: 1.1;
+    background-color: #594aff22;
 }
 
 #Resume .showresume.visible {
