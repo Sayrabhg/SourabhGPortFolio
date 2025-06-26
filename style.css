@@ -95,20 +95,20 @@ main .container {
 
 @keyframes front {
     0% {
-        transform: scale(1, 1);
+        transform: scale(.9);
     }
 
     50% {
-        transform: scale(.8, .8);
+        transform: scale(.8);
     }
 
     100% {
-        transform: scale(1, 1);
+        transform: scale(.9);
     }
 }
 
 .img1:hover {
-    transform: scale(.8, .8);
+    transform: scale(.8);
     animation: none;
 }
 
@@ -257,5 +257,47 @@ li a span {
     .circular-progress {
         width: 80px;
         height: 80px;
+    }
+}
+
+
+/* animation slider */
+
+.animations {
+    /* top: 35%;
+    left: 49%;
+    rotate: 0deg; */
+    animation: animatecross 6s linear infinite;
+}
+
+@keyframes animatecross {
+    0% {
+        top: 0%;
+        left: 25%;
+        rotate: 0deg;
+    }
+
+    25% {
+        top: 35%;
+        left: 0%;
+        /* rotate: 360deg; */
+    }
+
+    50% {
+        top: 73%;
+        left: 25%;
+        /* rotate: 0deg; */
+    }
+
+    75% {
+        top: 49%;
+        left: 50%;
+        /* rotate: 360deg; */
+    }
+
+    100% {
+        top: 0%;
+        left: 25%;
+        rotate: 360deg;
     }
 }
