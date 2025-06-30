@@ -18,6 +18,44 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
+    const target = document.getElementById('showabout-img');
+
+    if (target) {
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target); // Run only once
+                }
+            });
+        }, {
+            threshold: 0.1 // Trigger when 10% of the element is visible
+        });
+
+        observer.observe(target);
+    }
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    const target = document.getElementById('showabout-txt');
+
+    if (target) {
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target); // Run only once
+                }
+            });
+        }, {
+            threshold: 0.1 // Trigger when 10% of the element is visible
+        });
+
+        observer.observe(target);
+    }
+});
+
+document.addEventListener("DOMContentLoaded", function () {
     const target = document.getElementById('showresume');
 
     if (target) {
@@ -56,22 +94,54 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-    const target = document.getElementById('showgridresume');
+    const targets = document.querySelectorAll('.showgridresume');
 
-    if (target) {
-        const observer = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                    observer.unobserve(entry.target); // Run only once
-                }
-            });
-        }, {
-            threshold: 0.1 // Trigger when 10% of the element is visible
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target); // Only animate once
+            }
         });
+    }, {
+        threshold: 0.1
+    });
 
-        observer.observe(target);
-    }
+    targets.forEach(target => observer.observe(target));
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    const targets = document.querySelectorAll('#skills');
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target); // Only animate once
+            }
+        });
+    }, {
+        threshold: 0.1
+    });
+
+    targets.forEach(target => observer.observe(target));
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    const targets = document.querySelectorAll('#projects');
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target); // Only animate once
+            }
+        });
+    }, {
+        threshold: 0.1
+    });
+
+    targets.forEach(target => observer.observe(target));
 });
 
 document.addEventListener("DOMContentLoaded", function () {
