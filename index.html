@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
+
 <body>
     <div class="animations absolute">
-        <div class="bg-white w-50 h-50" style="opacity: .1;clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);"></div>
+        <div class="bg-white w-50 h-50"
+            style="opacity: .1;clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);">
+        </div>
     </div>
     <header class="relative w-full max-sm:py-5 justify-center flex"> <!-- links to navigate the pages START -->
         <nav class="py-1 fixed z-1">
@@ -59,12 +63,12 @@
                     included.</p>
             </div>
             <div class="grid lg:grid-cols-2 md:grid-cols-1 py-4 gap-y-5">
-                <div class="justify-self-center self-center">
-                    <img id="showabout"
+                <div class="justify-self-center self-center drop-shadow-[0px_0px_15px_#c9d5ff]">
+                    <img id="showabout-img"
                         class="lg:w-[24em] lg:h-[24em] border-5 border-[#c3e2f2bd] relative rounded-[10px]"
                         src="\imges\Sourabh1.jpg" alt="My Image">
                 </div>
-                <div class="relative ">
+                <div class="relative" id="showabout-txt">
                     <h2 class="lg:text-3xl font-bold sm:text-5xl sm:pt-6">Web Developer</h2>
                     <p class="py-2 lg:text-lg sm:text-3xl sm:py-7">As per my truly knowlegde based i fill my personals
                         details about my self</p>
@@ -139,25 +143,25 @@
             </aside>
             <aside class="py-4">
                 <h1 class="text-center font-bold lg:py-9 sm:py-12 lg:text-3xl sm:text-5xl">Education</h1>
-                <div id="showgridresume"
+                <div
                     class="grid lg:grid-cols-4 md:grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-20 py-5 lg:text-lg sm:text-3xl">
-                    <p
-                        class="border educationanimation border-[#8da0a849] rounded-[13px] lg:p-6 md:p-8 grid lg:gap-2 md:gap-6 lg:text-[#838181] hover:text-black">
+                    <p  id="showgridresume"
+                        class="border showgridresume educationanimation border-[#8da0a849] rounded-[13px] lg:p-6 md:p-8 grid lg:gap-2 md:gap-6 lg:text-[#838181] hover:text-black">
                         <b>VMV Commerce, JMT Arts & JJP Science College Wardhaman sq. Nagpur, Maharashtra.</b>- Master
                         Of Computer Application(MCA), Web Development, July 2023-Appearing.
                     </p>
-                    <p
-                        class="border educationanimation border-[#8da0a849] rounded-[13px] lg:p-6 md:p-8 grid lg:gap-2 md:gap-6 lg:text-[#838181] hover:text-black">
+                    <p  id="showgridresume"
+                        class="border showgridresume educationanimation border-[#8da0a849] rounded-[13px] lg:p-6 md:p-8 grid lg:gap-2 md:gap-6 lg:text-[#838181] hover:text-black">
                         <b>Shri. Mathuradas Mohota College Of Science Sakkardara road, Nagpur, Maharashtra.</b>-
                         Bachelor Of Science, PCM(Physics, Chemistry, Maths), Jun 2023-Passout with 60.07%.
                     </p>
-                    <p
-                        class="border educationanimation border-[#8da0a849] rounded-[13px] lg:p-6 md:p-8 grid lg:gap-2 md:gap-6 lg:text-[#838181] hover:text-black">
+                    <p  id="showgridresume"
+                        class="border showgridresume educationanimation border-[#8da0a849] rounded-[13px] lg:p-6 md:p-8 grid lg:gap-2 md:gap-6 lg:text-[#838181] hover:text-black">
                         <b>Prerna College Of Science Reshimbagh, Nagpur, Maharashtra</b>- HSC(Higher Secondary
                         Education), Feb 2020-Passout with 56.31%.
                     </p>
-                    <p
-                        class="border educationanimation border-[#8da0a849] rounded-[13px] lg:p-6 md:p-8 grid lg:gap-2 md:gap-6 lg:text-[#838181] hover:text-black">
+                    <p  id="showgridresume"
+                        class="border showgridresume educationanimation border-[#8da0a849] rounded-[13px] lg:p-6 md:p-8 grid lg:gap-2 md:gap-6 lg:text-[#838181] hover:text-black">
                         <b>Indira Gandhi High School Jawahar Nagar, Tukdoji Putla, Nagpur.</b>- SSC(Secondary School
                         Certificate), Mar 2018-Passout with 63.80%.
                     </p>
@@ -168,18 +172,17 @@
     <main class="Tech-Skills overflow-hidden bg-[#1bffec]">
         <div class="container py-5 text-white">
             <div class="div03">
-                <div class="div3">
+                <div id="skills" class="div3">
                     <h1 class="font-black lg:text-4xl sm:text-6xl lg:pt-3 sm:pt-10">Skills</h1>
                 </div>
                 <main class="main21">
-                    <div class="lg:py-4 sm:py-5">
+                    <div id="skills" class="lg:py-4 sm:py-5">
                         <p class="lg:indent-6 lg:text-lg/7 sm:text-3xl/10 text-justify">In the time of graduation i
                             completed my front end basic skills of the common languages. When pursuing my MCA (Master Of
                             Computer Application) Degree, I have been doing my coding skills about following
                             technical languages.</p>
                     </div>
-                    <div
-                        class="justify-self-center justify-items-center p-8 grid lg:grid-cols-2 sm:grid-cols-1 gap-y-10 w-fit">
+                    <div id="skills" class="justify-self-center justify-items-center p-8 grid lg:grid-cols-2 sm:grid-cols-1 gap-y-10 w-fit">
                         <div class="front-end lg:col-span-2">
                             <h2 class="text-center font-black lg:py-5 sm:py-10 lg:text-2xl sm:text-4xl">Front End</h2>
                             <div class="all-cards flex flex-wrap justify-center gap-5">
@@ -190,7 +193,7 @@
                                             alt="Html 5" class=""></div>
                                     <!-- <p>Html5</p> -->
                                     <div class="circular-progress" data-inner-circle-color="white" data-percentage="80"
-                                        data-progress-color="cyan" data-bg-color="#00000036">
+                                        data-progress-color="#e64d24" data-bg-color="#00000036">
                                         <div class="inner-circle"></div>
                                         <p class="percentage">0%</p>
                                     </div>
@@ -199,12 +202,11 @@
                                 <div
                                     class="bg-white rounded-lg shadow-2xl p-5 justify-items-center content-center grid gap-y-5">
                                     <div class="w-[130px] h-[120px] content-center"><img
-                                            src="imges/logos/css3-logo-png_seeklogo-186678.png"
-                                            alt="Css 3" class="">
+                                            src="imges/logos/css3-logo-png_seeklogo-186678.png" alt="Css 3" class="">
                                     </div>
                                     <!-- <p>Css3</p> -->
                                     <div class="circular-progress" data-inner-circle-color="white" data-percentage="80"
-                                        data-progress-color="cyan" data-bg-color="#00000036">
+                                        data-progress-color="#2162af" data-bg-color="#00000036">
                                         <div class="inner-circle"></div>
                                         <p class="percentage">0%</p>
                                     </div>
@@ -212,11 +214,10 @@
                                 <div
                                     class="bg-white rounded-lg shadow-2xl p-5 justify-items-center content-center grid gap-y-5">
                                     <div class="w-[130px] h-[120px] content-center"><img
-                                            src="imges/logos/bootstrap-wordmark.png" alt="Bootstrap"
-                                            class=""></div>
+                                            src="imges/logos/bootstrap-wordmark.png" alt="Bootstrap" class=""></div>
                                     <!-- <p>Bootstrap</p> -->
                                     <div class="circular-progress" data-inner-circle-color="white" data-percentage="46"
-                                        data-progress-color="cyan" data-bg-color="#00000036">
+                                        data-progress-color="#7210e0" data-bg-color="#00000036">
                                         <div class="inner-circle"></div>
                                         <p class="percentage">0%</p>
                                     </div>
@@ -225,11 +226,10 @@
                                 <div
                                     class="bg-white rounded-lg shadow-2xl p-5 justify-items-center content-center grid gap-y-5">
                                     <div class="w-[130px] h-[120px] content-center"><img
-                                            src="imges/logos/JavaScript-Logo.png"
-                                            alt="Javascript" class=""></div>
+                                            src="imges/logos/JavaScript-Logo.png" alt="Javascript" class=""></div>
                                     <!-- <p>Javascript</p> -->
                                     <div class="circular-progress" data-inner-circle-color="white" data-percentage="30"
-                                        data-progress-color="cyan" data-bg-color="#00000036">
+                                        data-progress-color="#e4a126" data-bg-color="#00000036">
                                         <div class="inner-circle"></div>
                                         <p class="percentage">0%</p>
                                     </div>
@@ -237,12 +237,11 @@
 
                                 <div
                                     class="bg-white rounded-lg shadow-2xl p-5 justify-items-center content-center grid gap-y-5">
-                                    <div class="w-[130px] h-[120px] content-center"><img
-                                            src="imges/logos/tailwind.png"
+                                    <div class="w-[130px] h-[120px] content-center"><img src="imges/logos/tailwind.png"
                                             alt="Tailwind" class=""></div>
                                     <!-- <p>Tailwind</p> -->
                                     <div class="circular-progress" data-inner-circle-color="white" data-percentage="40"
-                                        data-progress-color="cyan" data-bg-color="#00000036">
+                                        data-progress-color="#38bdf8" data-bg-color="#00000036">
                                         <div class="inner-circle"></div>
                                         <p class="percentage">0%</p>
                                     </div>
@@ -255,11 +254,11 @@
                                 <div
                                     class="bg-white rounded-lg shadow-2xl p-5 justify-items-center content-center grid gap-y-5">
                                     <div class="w-[130px] h-[120px] content-center"><img
-                                            src="imges/logos/java-fullstack.png"
-                                            alt="Fullstack Developer" class=""></div>
+                                            src="imges/logos/java-fullstack.png" alt="Fullstack Developer" class="">
+                                    </div>
                                     <!-- <p>Fullstack Developer</p> -->
                                     <div class="circular-progress" data-inner-circle-color="white" data-percentage="54"
-                                        data-progress-color="cyan" data-bg-color="#00000036">
+                                        data-progress-color="#2ebb00" data-bg-color="#00000036">
                                         <div class="inner-circle"></div>
                                         <p class="percentage">0%</p>
                                     </div>
@@ -267,12 +266,11 @@
 
                                 <div
                                     class="bg-white rounded-lg shadow-2xl p-5 justify-items-center content-center grid gap-y-5">
-                                    <div class="w-[130px] h-[120px] content-center"><img
-                                            src="imges/logos/java-logo.png"
+                                    <div class="w-[130px] h-[120px] content-center"><img src="imges/logos/java-logo.png"
                                             alt="Core Java" class=""></div>
                                     <!-- <p>Core Java</p> -->
                                     <div class="circular-progress" data-inner-circle-color="white" data-percentage="60"
-                                        data-progress-color="cyan" data-bg-color="#00000036">
+                                        data-progress-color="#c92c2d" data-bg-color="#00000036">
                                         <div class="inner-circle"></div>
                                         <p class="percentage">0%</p>
                                     </div>
@@ -285,42 +283,30 @@
                                 <div
                                     class="bg-white rounded-lg shadow-2xl p-5 justify-items-center content-center grid gap-y-5">
                                     <div class="w-[130px] h-[120px] content-center"><img
-                                            src="imges/logos/mysql-logo-development-code-icon.png"
-                                            alt="Sql" class=""></div>
+                                            src="imges/logos/mysql-logo-development-code-icon.png" alt="Sql" class="">
+                                    </div>
                                     <!-- <p>Sql</p> -->
                                     <div class="circular-progress" data-inner-circle-color="white" data-percentage="50"
-                                        data-progress-color="cyan" data-bg-color="#00000036">
+                                        data-progress-color="#e49329" data-bg-color="#00000036">
                                         <div class="inner-circle"></div>
                                         <p class="percentage">0%</p>
                                     </div>
                                 </div>
                                 <div
                                     class="bg-white rounded-lg shadow-2xl p-5 justify-items-center content-center grid gap-y-5">
-                                    <div class="w-[130px] h-[120px] content-center"><img src="imges/logos/pngimg.com - php_PNG43.png"
-                                            alt="Php" class=""></div>
+                                    <div class="w-[130px] h-[120px] content-center"><img
+                                            src="imges/logos/pngimg.com - php_PNG43.png" alt="Php" class=""></div>
                                     <!-- <p>Php</p> -->
                                     <div class="circular-progress" data-inner-circle-color="white" data-percentage="54"
-                                        data-progress-color="cyan" data-bg-color="#00000036">
+                                        data-progress-color="#6e81b6" data-bg-color="#00000036">
                                         <div class="inner-circle"></div>
                                         <p class="percentage">0%</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-                        <!-- <div>
-                                    <img src="" alt="" class="">
-                                    <p>Python</p>
-                                    <div class="circular-progress" data-inner-circle-color="white" data-percentage="30" data-progress-color="cyan"
-                                    data-bg-color="#00000036">
-                                        <div class="inner-circle"></div>
-                                        <p class="percentage">0%</p>
-                                    </div>
-                                </div> -->
-
-
                     </div>
-                    <div class="py-5">
+                    <div id="skills" class="py-5">
                         <p class="lg:text-lg/7 sm:text-3xl/10 text-justify">The above languages progress bar telling
                             about my programming knowlegde on progress level</p>
                     </div>
@@ -332,7 +318,7 @@
         <div class="container py-5">
             <aside class="aside33">
                 <h1 class="font-black lg:text-4xl sm:text-6xl lg:py-3 sm:py-10">Projects</h1>
-                <div class="p-8">
+                <div id="projects" class="p-8">
                     <div class="grid lg:grid-cols-3 sm:grid-cols-1 lg:px-0 sm:px-9 gap-x-10 gap-y-16">
                         <div
                             class="lg:drop-shadow-[0px_0px_5px_#0000002e] sm:drop-shadow-[0px_0px_5px_#0000005d] bg-white hover:bg-white lg:rounded-lg sm:rounded-3xl overflow-hidden educationanimation">
@@ -364,8 +350,11 @@
                                 <div class="lg:h-70 sm:h-110 overflow-hidden"><img src="imges/HomeRenovation.png"
                                         alt=""></div>
                                 <h2 class="lg:text-xl sm:text-4xl font-black lg:p-4 sm:p-8">Home Renovation Pro</h2>
-                                <p class="lg:px-4 sm:px-8 pb-4 lg:text-lg sm:text-3xl text-justify">This theme is made been in a wordpress, In this website many dynamic and responsive front-pages, single pages, inner
-                                pages which i had been creating in the recently. The theme is purely creating to the home renovation clients.</p>
+                                <p class="lg:px-4 sm:px-8 pb-4 lg:text-lg sm:text-3xl text-justify">This theme is made
+                                    been in a wordpress, In this website many dynamic and responsive front-pages, single
+                                    pages, inner
+                                    pages which i had been creating in the recently. The theme is purely creating to the
+                                    home renovation clients.</p>
                             </div>
                         </div>
                     </div>
