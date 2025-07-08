@@ -221,7 +221,7 @@ li a span {
 }
 
 #skills,
-#projects,
+/* #projects, */
 #Resume .showresume,
 #Resume .showgridresume {
     opacity: 0;
