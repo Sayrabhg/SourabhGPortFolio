@@ -121,7 +121,19 @@ main .container {
 
 .Tech-Skills {
     background: linear-gradient(-222deg, #111111 0% 19%, #584fb9 85%);
+    position: relative;
 }
+
+/* .Tech-Skills::before {
+    content: '';
+    pointer-events: none;
+    position: absolute;
+    left: 2em;
+    top: 3em;
+    width: 500px;
+    height: 400px;
+    background: radial-gradient(circle at center, #00c382cc 0%, #003d25b3 40%, #00000000 80%);
+} */
 
 .div2 {
     border: 1px solid rgba(255, 255, 255, 0);
@@ -210,14 +222,19 @@ li a span {
 }
 
 .educationanimation,
-.alleductionanimation {
+.alleductionanimation,
+.alleductionanimation .icons,
+.alleductionanimation img {
     transition: all .7s ease-in;
 }
 
 .educationanimation:hover {
-    filter: none;
     scale: 1.04;
-    background-color: #594aff22;
+    background-color: #a5a2ce1e;
+}
+
+.educationanimation:hover img {
+    scale: 1.06;
 }
 
 #skills,
@@ -329,8 +346,8 @@ li a span {
 
 .inner-circle {
     position: absolute;
-    width: 50px;
-    height: 50px;
+    width: 47px;
+    height: 47px;
     border-radius: 50%;
     background-color: rgb(83, 36, 36);
 }
@@ -387,5 +404,60 @@ li a span {
         top: 0%;
         left: 25%;
         rotate: 360deg;
+    }
+}
+
+#projects .alleductionanimation:hover .icons {
+    border: 1px solid rgb(17, 52, 255);
+    padding: 3px 8px;
+    background-color: #0051ff70;
+    color: #ffffff;
+}
+
+@media screen and (min-width:1281px) {
+    #projects {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width:1280px) {
+    #projects {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width:1023px) {
+    #projects {
+        grid-template-columns: auto;
+    }
+}
+
+#projects .alleductionanimation:hover .visiblelive {
+    opacity: 1;
+    transition: all .7s ease;
+}
+
+.animatelive {
+    animation: alltime .6s ease-in infinite;
+}
+
+@keyframes alltime {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    #projects .alleductionanimation:hover .animated-text h2 {
+        transform: translateY(-2rem);
+        transition: all .7s ease;
+    }
+
+    #projects .alleductionanimation .animated-text h2 {
+        transform: translateY(0);
+        transition: all 0.7s ease;
     }
 }
