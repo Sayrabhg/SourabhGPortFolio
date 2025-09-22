@@ -22,7 +22,6 @@ Web Developer skilled as a Java Full-Stack and WordPress developer.
 **Skills**
 
 * Frontend: HTML5, CSS3, Bootstrap, JavaScript, Tailwind (progress shown).
-// * Backend / Database: Java, SQL, etc.
 
 **Projects**
 Some highlighted ones:
